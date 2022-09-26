@@ -10,7 +10,7 @@ const Product = ({product,hendelProduct}) => {
     return (
         <div>
             <div className='card'>
-                <img src={img} alt="" />
+                <img src={img?img:""} alt="" />
                 <h3>{name}</h3>
                 <h4>Price: ${price}</h4>
                 <div className="card_info">
