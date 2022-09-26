@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Card = ({card}) => {
-    console.log(card)
     let total = 0;
     let shipping = 0;
     let quantity = 0;
