@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import { getData, localSto } from '../../utilities/fakedb';
 import Card from '../Card/Card';
 import Product from '../Product/Product';
@@ -7,6 +8,8 @@ import "./Shop.css"
 const Shop = () => {
     const [card, setCard] = useState([])
     const [products, setProducts] = useState([])
+    // const products = useLoaderData()
+    // setProducts(product)
     useEffect(() => {
         fetch("products.json")
         .then(res => res.json())

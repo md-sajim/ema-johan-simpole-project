@@ -42,7 +42,6 @@ export {
 }
 *////////////////////////////////////////////////////////////////////////
 function localSto(id, id2) {
-    console.log(id)
     if (id === "delete") {
         const con = window.confirm("Press a button!");
         if (con) {

@@ -18,7 +18,7 @@ const Product = ({product,hendelProduct}) => {
                     <p><small>Ratings: {ratings}</small></p>
                 </div>
             </div>
-                <button onClick={()=>hendelProduct(product)}>Add to Cart <FontAwesomeIcon icon={faCartShopping}/> </button>
+                <button className='but' onClick={()=>hendelProduct(product)}>Add to Cart <FontAwesomeIcon icon={faCartShopping}/> </button>
         </div>
     );
 };
